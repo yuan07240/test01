@@ -1,0 +1,113 @@
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C4F4E48>
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C519550>
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C4F4E10>
+now:0710
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000004
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C52C4A8>
+now:0710
+now:0710
+now:0710
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000004
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000005
+load_workbook
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000004
+load_workbook
+load_workbook
+load_workbook
+load_workbook
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C5035F8>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C503940>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C503DA0>
+now:0710
+now:0710
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000001
+load_workbook
+now:0710
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C510C50>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000001
+load_workbook
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000001
+load_workbook
+now:0710
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000EA44630>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000EA4BEB8>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000CD92B70>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000003
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000CD92860>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000004
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000003
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000EA445C0>
+server waiting...
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000004
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000003
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000EA4B0B8>
+server waiting...
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000004
+server waiting...
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C5080F0>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C5155F8>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C51CF98>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000005
+server waiting...
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000005
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000005
+server waiting...
+server waiting...
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C5102E8>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C5062B0>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C506208>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000006
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000006
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000006
+server waiting...
+server waiting...
+server waiting...
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C617080>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C5F4E48>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000C60E240>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000007
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000007
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200710000007
+server waiting...
+server waiting...
+server waiting...
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000E812940>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000E822080>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x000000000CD9C710>
+load_workbook
+load_workbook
+load_workbook
+wb:<openpyxl.workbook.workbook.Workbook object at 0x0000000010DCE828>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x00000000112E9E10>
+wb:<openpyxl.workbook.workbook.Workbook object at 0x00000000112CDA20>
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200711000008
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200711000008
+a_sheet.cell(row=(a_sheet.max_row),column=1).value:HMD3DC200711000008
+server waiting...
+server waiting...
+server waiting...
