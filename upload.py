@@ -32,9 +32,9 @@ class Upfile:
                 )
                 #print(response[])
                 #print(self.get_url(d,file))
-    def get_url(self,d,file):
-        url=self.client.get_presigned_download_url(Bucket=self.bucket,Key=d+'/'+file)
-        return url
+    #def get_url(self,d,file):
+        #url=self.client.get_presigned_download_url(Bucket=self.bucket,Key=d+'/'+file)
+        #return url
 
     # def main(self):
     #     #print(get_Sn(file_path))
