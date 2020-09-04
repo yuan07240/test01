@@ -1,7 +1,7 @@
 #!/usr/bin/env Python
 # coding=utf-8
 import upload,api_up,demo
-import sys, os,time
+import sys, os,time,datetime,shutil
 if hasattr(sys, 'frozen'):
     os.environ['PATH'] = sys._MEIPASS + ";" + os.environ['PATH']
 # from PyQt5.QtCore import *
@@ -27,14 +27,20 @@ class MainCode(QMainWindow,Ui_MainWindow):
     def initUI(self):
         self.setWindowTitle("上传工具")
         self.setWindowIcon(QIcon('./image/title.png'))  # 设置窗体图标
-    # def thread_file(self):
-    #     t = threading.Thread(target=self.up_file, name='thread_1')
-    #     t.setDaemon(True)
-    #     t.start()
+
     def r_files(self):
         file_path = os.path.dirname(os.path.abspath(__file__)) + '\\' + 'test'
         for root, dirs, files in os.walk(file_path):
             yield dirs
+    def move_file(self,m_path):
+        now = datetime.datetime.now()
+        otherStyleTime = now.strftime("%Y_%m_%d")
+        new_file = r'D:\img_file' + '\\' + otherStyleTime
+        #print(new_file)
+        if not os.path.exists(new_file):
+            os.makedirs(new_file)
+        shutil.move(m_path, new_file)
+        print('finish...')
     def up_file(self):
         self.pushButton_2.setDisabled(True)
         self.lineEdit.setText('https://ota.sprocomm.com/api/file/8011/uploadDownload/v2/')
@@ -48,8 +54,12 @@ class MainCode(QMainWindow,Ui_MainWindow):
             for sn in next(self.r_files()):
                 print('SN ：' + sn)
                 m_path= os.path.dirname(os.path.abspath(__file__)) + '\\' + 'test'+ '\\' + sn  # 上传为路径
+                print(m_path)
                 upload.Upfile().upfile(m_path, sn)
-                #self.up_api('上传文件pass:%d次' % count)
+                QApplication.processEvents()
+                time.sleep(0.1)
+                self.move_file(m_path)
+                self.up_api('上传文件pass:%d次' % count)
                 log=api_up.UpApi(sn).up_post()
                 if log.status_code==400:
                     self.up_api('请求SN：'+sn)
@@ -86,21 +96,6 @@ class MainCode(QMainWindow,Ui_MainWindow):
         print('打开服务接收数据')
         QApplication.processEvents()
         time.sleep(0.1)
-        # self.textBrowser.append('上传文件列表：')
-        # while 1:
-        #     QApplication.processEvents()
-        #     time.sleep(0.2)
-        #     for root, dirs, files in os.walk(path):
-        #         print(dirs)# dirs返回文件夹名字# files返回文件名字
-        #         if dirs:
-        #             # return array
-        #             self.textBrowser.append(str(dirs))  # 在指定的区域显示提示信息
-        #             self.cursot = self.textBrowser.textCursor()
-        #             self.textBrowser.moveCursor(self.cursot.End)
-        #             QApplication.processEvents()
-        #             time.sleep(0.1)
-            #else:
-                #break
     def accept_file(self):
 
         ip=self.lineEdit_3.text()
@@ -122,12 +117,21 @@ class MainCode(QMainWindow,Ui_MainWindow):
         cursor = self.textEdit.textCursor()
         cursor.movePosition(QtGui.QTextCursor.End)
         cursor.insertText(text)
+        self.Txt_write(text)
         self.textEdit.setTextCursor(cursor)
         self.textEdit.ensureCursorVisible()
         if 'ZIPHASH is OK' in text:
             self.textEdit.clear()#接收成功，清理log
             QApplication.processEvents()
             time.sleep(0.1)
+    def Txt_write(self,type):  # 写入函数
+        now = datetime.datetime.now()
+        otherStyleTime = now.strftime("%Y_%m_%d")
+        filename =os.path.dirname(os.path.realpath(sys.argv[0]))+'\\log\\log2_'+otherStyleTime+'.txt' # 创建一个txt文件
+        file = open(filename, 'a')
+        if type!='16*1024':
+            file.write(type)  # 打开文件并且写入数据
+        file.close()
 class MyQThread(QThread):
     def __init__(self, ip,port):
         super().__init__()  ## 继承QThread
